@@ -1,0 +1,7 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1774210337" />
+    <testcase name="test_full_inference" classname="test_inference" file="/home/uttam/Documents/MLP_ACCEL/mlp_accel/tests/test_inference.py" lineno="83" time="165.5382800102234" sim_time_ns="21231800.0" ratio_time="128259.15551791861" />
+    <testcase name="test_inference_timing" classname="test_inference" file="/home/uttam/Documents/MLP_ACCEL/mlp_accel/tests/test_inference.py" lineno="134" time="10.51305079460144" sim_time_ns="2123320.0" ratio_time="201969.9173421997" />
+  </testsuite>
+</testsuites>

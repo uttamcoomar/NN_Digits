@@ -1,0 +1,5 @@
+read_verilog ../rtl/top_loopback.v
+read_verilog ../rtl/uart/uart_rx.v
+read_verilog ../rtl/uart/uart_tx.v
+synth_ecp5 -abc2 -top top -json ../build/top_loopback.json
+stat

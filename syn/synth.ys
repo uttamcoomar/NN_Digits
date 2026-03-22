@@ -1,0 +1,12 @@
+# synth.ys — run from syn/ directory (Makefile does: cd syn && yosys synth.ys)
+# Hex files are copied to syn/hex/ by the Makefile before this runs.
+# $readmemh("hex/...") in the Verilog resolves relative to syn/ — correct.
+
+read_verilog ../rtl/mlp_accel.v
+read_verilog ../rtl/uart/uart_rx.v
+read_verilog ../rtl/uart/uart_tx.v
+read_verilog ../rtl/top.v
+
+synth_ecp5 -abc2 -top top -json ../build/top.json
+
+stat
